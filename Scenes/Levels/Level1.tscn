@@ -1,0 +1,175 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scenes/Levels/LevelTemplate.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Models/Architecture/wall.mesh" type="ArrayMesh" id=2]
+[ext_resource path="res://Models/Architecture/wallDoorwayWide.mesh" type="ArrayMesh" id=3]
+[ext_resource path="res://Models/Architecture/wallWindow.mesh" type="ArrayMesh" id=4]
+[ext_resource path="res://Models/Architecture/wallWindowSlide.mesh" type="ArrayMesh" id=5]
+
+[node name="Level1" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.418716, 0 )
+
+[node name="Floor" parent="." index="0"]
+transform = Transform( 15, 0, 0, 0, 1, 0, 0, 0, 15, 36, 0, -39.0952 )
+
+[node name="wallDoorwayWide" type="MeshInstance" parent="Walls" index="0"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.74943, 1.64493, 14.0042 )
+mesh = ExtResource( 3 )
+skeleton = NodePath("../..")
+
+[node name="wall" type="MeshInstance" parent="Walls" index="1"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -11.7321, 1.69025, 14.0006 )
+mesh = ExtResource( 2 )
+
+[node name="wall2" type="MeshInstance" parent="Walls" index="2"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6.73213, 1.69025, 14.0006 )
+mesh = ExtResource( 2 )
+
+[node name="wall4" type="MeshInstance" parent="Walls" index="3"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.26787, 1.69025, 14.0006 )
+mesh = ExtResource( 2 )
+
+[node name="wall5" type="MeshInstance" parent="Walls" index="4"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -16.7321, 1.69025, 14.0006 )
+mesh = ExtResource( 2 )
+
+[node name="wall6" type="MeshInstance" parent="Walls" index="5"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -21.7321, 1.69025, 14.0006 )
+mesh = ExtResource( 2 )
+
+[node name="wall7" type="MeshInstance" parent="Walls" index="6"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -26.7321, 1.69025, 14.0006 )
+mesh = ExtResource( 2 )
+
+[node name="wall8" type="MeshInstance" parent="Walls" index="7"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -31.7321, 1.69025, 14.0006 )
+mesh = ExtResource( 2 )
+
+[node name="wall9" type="MeshInstance" parent="Walls" index="8"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8.26787, 1.69025, 14.0006 )
+mesh = ExtResource( 2 )
+
+[node name="wall10" type="MeshInstance" parent="Walls" index="9"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 13.2679, 1.69025, 14.0006 )
+mesh = ExtResource( 2 )
+
+[node name="wall23" type="MeshInstance" parent="Walls" index="10"]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 27.7772, 1.3376, 0.26566 )
+mesh = ExtResource( 2 )
+
+[node name="wall24" type="MeshInstance" parent="Walls" index="11"]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 27.7772, 1.3376, 10.0961 )
+mesh = ExtResource( 2 )
+
+[node name="wall25" type="MeshInstance" parent="Walls" index="12"]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 27.7772, 1.3376, 14.8102 )
+mesh = ExtResource( 2 )
+
+[node name="wall26" type="MeshInstance" parent="Walls" index="13"]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 27.7772, 1.3376, -9.16954 )
+mesh = ExtResource( 2 )
+
+[node name="wall27" type="MeshInstance" parent="Walls" index="14"]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 27.7772, 1.3376, -13.8819 )
+mesh = ExtResource( 2 )
+
+[node name="wall11" type="MeshInstance" parent="Walls" index="15"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 18.2679, 1.69025, 14.0006 )
+mesh = ExtResource( 2 )
+
+[node name="wall12" type="MeshInstance" parent="Walls" index="16"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 23.2679, 1.69025, 14.0006 )
+mesh = ExtResource( 2 )
+
+[node name="wallDoorwayWide2" type="MeshInstance" parent="Walls" index="17"]
+transform = Transform( 0.999997, 0, 0.00237372, 0, 1, 0, -0.00237372, 0, 0.999997, 2.95488, 1.64493, -18.4676 )
+mesh = ExtResource( 3 )
+skeleton = NodePath("../..")
+
+[node name="wall3" type="MeshInstance" parent="Walls" index="18"]
+transform = Transform( 0.999997, 0, 0.00237372, 0, 1, 0, -0.00237372, 0, 0.999997, 12.9376, 1.69025, -18.4878 )
+mesh = ExtResource( 2 )
+
+[node name="wall13" type="MeshInstance" parent="Walls" index="19"]
+transform = Transform( 0.999997, 0, 0.00237372, 0, 1, 0, -0.00237372, 0, 0.999997, 7.93758, 1.69025, -18.4759 )
+mesh = ExtResource( 2 )
+
+[node name="wall14" type="MeshInstance" parent="Walls" index="20"]
+transform = Transform( 0.999997, 0, 0.00237372, 0, 1, 0, -0.00237372, 0, 0.999997, -2.06239, 1.69025, -18.4522 )
+mesh = ExtResource( 2 )
+
+[node name="wall15" type="MeshInstance" parent="Walls" index="21"]
+transform = Transform( 0.999997, 0, 0.00237372, 0, 1, 0, -0.00237372, 0, 0.999997, 17.9375, 1.69025, -18.4996 )
+mesh = ExtResource( 2 )
+
+[node name="wall16" type="MeshInstance" parent="Walls" index="22"]
+transform = Transform( 0.999997, 0, 0.00237372, 0, 1, 0, -0.00237372, 0, 0.999997, 22.9375, 1.69025, -18.5115 )
+mesh = ExtResource( 2 )
+
+[node name="wall17" type="MeshInstance" parent="Walls" index="23"]
+transform = Transform( 0.999997, 0, 0.00237372, 0, 1, 0, -0.00237372, 0, 0.999997, 27.9375, 1.69025, -18.5234 )
+mesh = ExtResource( 2 )
+
+[node name="wall18" type="MeshInstance" parent="Walls" index="24"]
+transform = Transform( 0.999997, 0, 0.00237372, 0, 1, 0, -0.00237372, 0, 0.999997, -26.7385, 1.69025, -18.4094 )
+mesh = ExtResource( 2 )
+
+[node name="wall19" type="MeshInstance" parent="Walls" index="25"]
+transform = Transform( 0.999997, 0, 0.00237372, 0, 1, 0, -0.00237372, 0, 0.999997, -7.06238, 1.69025, -18.4403 )
+mesh = ExtResource( 2 )
+
+[node name="wall20" type="MeshInstance" parent="Walls" index="26"]
+transform = Transform( 0.999997, 0, 0.00237372, 0, 1, 0, -0.00237372, 0, 0.999997, -12.0624, 1.69025, -18.4284 )
+mesh = ExtResource( 2 )
+
+[node name="wall21" type="MeshInstance" parent="Walls" index="27"]
+transform = Transform( 0.999997, 0, 0.00237372, 0, 1, 0, -0.00237372, 0, 0.999997, -17.0624, 1.69025, -18.4166 )
+mesh = ExtResource( 2 )
+
+[node name="wall22" type="MeshInstance" parent="Walls" index="28"]
+transform = Transform( 0.999997, 0, 0.00237372, 0, 1, 0, -0.00237372, 0, 0.999997, -22.0623, 1.69025, -18.4047 )
+mesh = ExtResource( 2 )
+
+[node name="wallWindowSlide2" type="MeshInstance" parent="Walls" index="29"]
+transform = Transform( 1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 27.733, 1.28851, -4.48938 )
+mesh = ExtResource( 5 )
+skeleton = NodePath("../wall")
+
+[node name="wallWindow2" type="MeshInstance" parent="Walls" index="30"]
+transform = Transform( 0.0177663, 0, 0.999842, 0, 1, 0, -0.999842, 0, 0.0177663, -30.0956, 1.73777, -9.03854 )
+mesh = ExtResource( 4 )
+skeleton = NodePath("../wall23")
+
+[node name="wallWindow3" type="MeshInstance" parent="Walls" index="31"]
+transform = Transform( -0.0262292, 0, -0.999656, 0, 1, 0, 0.999656, 0, -0.0262292, 27.7848, 1.31141, 5.08575 )
+mesh = ExtResource( 4 )
+skeleton = NodePath("../wall23")
+
+[node name="wall33" type="MeshInstance" parent="Walls" index="32"]
+transform = Transform( 0.0177663, 0, 0.999842, 0, 1, 0, -0.999842, 0, 0.0177663, -30.2143, 1.60837, -4.20971 )
+mesh = ExtResource( 2 )
+
+[node name="wall34" type="MeshInstance" parent="Walls" index="33"]
+transform = Transform( 0.0177663, 0, 0.999842, 0, 1, 0, -0.999842, 0, 0.0177663, -30.0397, 1.60837, -14.0386 )
+mesh = ExtResource( 2 )
+
+[node name="wall35" type="MeshInstance" parent="Walls" index="34"]
+transform = Transform( 0.0177663, 0, 0.999842, -0.00670096, 0.999978, 0.00011907, -0.99982, -0.00670201, 0.0177659, -29.9559, 1.60837, -18.7519 )
+mesh = ExtResource( 2 )
+
+[node name="wall36" type="MeshInstance" parent="Walls" index="35"]
+transform = Transform( 0.0177663, 0, 0.999842, 0, 1, 0, -0.999842, 0, 0.0177663, -30.382, 1.60837, 5.224 )
+mesh = ExtResource( 2 )
+
+[node name="wall37" type="MeshInstance" parent="Walls" index="36"]
+transform = Transform( 0.0177663, 0, 0.999842, 0, 1, 0, -0.999842, 0, 0.0177663, -30.4657, 1.60837, 9.93559 )
+mesh = ExtResource( 2 )
+
+[node name="wallWindowSlide3" type="MeshInstance" parent="Walls" index="37"]
+transform = Transform( 0.0177663, 0, 0.999842, 0, 1, 0, -0.999842, 0, 0.0177663, -30.2547, 1.55928, 0.545364 )
+mesh = ExtResource( 5 )
+skeleton = NodePath("../wall")
+
+[node name="PlayerM" parent="." index="4"]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -24.4786, 0.306319, -1.53087 )
+mouse_sensitivity = 1200
