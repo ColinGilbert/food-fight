@@ -3,18 +3,19 @@
 [ext_resource path="res://Models/Architecture/floorFull.mesh" type="ArrayMesh" id=1]
 [ext_resource path="res://Scenes/Characters/Players/PlayerM.tscn" type="PackedScene" id=2]
 
-[sub_resource type="ConcavePolygonShape" id=1]
-data = PoolVector3Array( 0, 0.25, 0, 0, 0, 0, 0, 0.25, 5, 0, 0, 5, 0, 0.25, 5, 0, 0, 0, 0, 0.25, 0, 0, 0.25, 5, -5, 0.25, 0, -5, 0.25, 5, -5, 0.25, 0, 0, 0.25, 5, 0, 0, 5, 0, 0, 0, -5, 0, 5, -5, 0, 0, -5, 0, 5, 0, 0, 0, 0, 0, 5, -5, 0, 5, 0, 0.25, 5, -5, 0.25, 5, 0, 0.25, 5, -5, 0, 5, -5, 0, 0, 0, 0, 0, -5, 0.25, 0, 0, 0.25, 0, -5, 0.25, 0, 0, 0, 0, -5, 0, 0, -5, 0.25, 0, -5, 0, 5, -5, 0.25, 5, -5, 0, 5, -5, 0.25, 0 )
+[sub_resource type="ConvexPolygonShape" id=1]
+points = PoolVector3Array( -5, 0, 0, -5, 0.25, 0, 0, 0, 0, -5, 0, 5, -5, 0.25, 5, 0, 0.25, 0, 0, 0, 5, 0, 0.25, 5 )
 
 [node name="LevelTemplate" type="Spatial"]
 
-[node name="Floor" type="MeshInstance" parent="."]
+[node name="StaticBody" type="StaticBody" parent="."]
 transform = Transform( 15, 0, 0, 0, 1, 0, 0, 0, 15, 36, 0, -36 )
+
+[node name="Floor" type="MeshInstance" parent="StaticBody"]
 mesh = ExtResource( 1 )
+skeleton = NodePath("../..")
 
-[node name="StaticBody" type="StaticBody" parent="Floor"]
-
-[node name="CollisionShape" type="CollisionShape" parent="Floor/StaticBody"]
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
 shape = SubResource( 1 )
 
 [node name="Furniture" type="Node" parent="."]
@@ -27,4 +28,4 @@ transform = Transform( 1, 0, 0, 0, -0.955644, 0.294524, 0, -0.294524, -0.955644,
 [node name="Walls" type="Node" parent="."]
 
 [node name="PlayerM" parent="." instance=ExtResource( 2 )]
-transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.0574098, -14.1274 )
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.303442, -14.1274 )
