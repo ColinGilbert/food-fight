@@ -1,9 +1,16 @@
 extends KinematicBody
 
+var food_types = {}
 const PROJECTILE_SPEED = 50
 
+func _ready():
+	food_types = FileGrabber.get_files("res://Scenes/Ammo/FoodTypes/")
+	print(food_types)
+	randomize()
+
 func fire():
-	var projectile = load("res://Scenes/Ammo/ProjectileTemplate.tscn").instance()
+	var random_food = food_types[randi() % food_types.size()]
+	var projectile = load(random_food).instance()
 	add_child(projectile)
 	projectile.set_as_toplevel(true) # to prevent projectile moving in the same direction as the player. try commenting out for fun
 	projectile.global_transform = $Forward.global_transform

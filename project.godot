@@ -24,6 +24,10 @@ config/name="food-fight"
 run/main_scene="res://Scenes/Levels/LevelTemplate.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+FileGrabber="*res://Utilities/file_grabber.gd"
+
 [editor]
 
 version_control_autoload_on_startup=true
@@ -32,6 +36,21 @@ version_control_plugin_name="GitAPI"
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
+
+[importer_defaults]
+
+wav={
+"compress/mode": 0,
+"edit/loop_begin": 0,
+"edit/loop_end": -1,
+"edit/loop_mode": 1,
+"edit/normalize": true,
+"edit/trim": true,
+"force/8_bit": true,
+"force/max_rate": true,
+"force/max_rate_hz": 44100,
+"force/mono": true
+}
 
 [input]
 
