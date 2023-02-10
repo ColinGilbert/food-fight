@@ -21,3 +21,8 @@ shape = SubResource( 2 )
 
 [node name="Forward" type="Position3D" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 3 )
+
+[node name="TimeBetweenShots" type="Timer" parent="."]
+wait_time = 0.5
+
+[connection signal="timeout" from="TimeBetweenShots" to="." method="_on_TimeBetweenShots_timeout"]
